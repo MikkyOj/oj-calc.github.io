@@ -1,4 +1,4 @@
-// Author: Ibrahim Ahmed, 000880591
+// Author: Ojebola Michael
 // Created Jan., 31, 2023. External Javascript page. It contains the functions used to interact with the users input in the html page
 
 // function for group 1, question one.. number in range
