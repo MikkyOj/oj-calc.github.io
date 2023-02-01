@@ -45,6 +45,7 @@ function group_1_quest_2() {
 
         // calculation to see the number of days from the monthDaysLeft. Using the modular method to check the reminder after the number of month has been determined
         days = monthDaysLeft % 30.44;
+        days = Math.round((days + Number.EPSILON) * 100) / 100
 
         output1b.innerText = "There are " + years + "year(s), " + months + "month(s) and " + days + "day(s)";   // displaying the result to user
     } else {
@@ -115,7 +116,7 @@ function group_3_quest_1() {
     if (!isNaN(userInput)) {
 
         // logic to see if number is within the range
-        if (numLength >= 10 && numLength <= 20) {
+        if (numLength >= 2 && numLength <= 20) {
 
             let result = 0; // temporary decimal result
             let index = numLength - 1; // this will be used inside the loop to call index of the binary
@@ -186,7 +187,7 @@ function group_3_quest_2() {
             else if (operand == "%") {
                 result = op1 % op2
             }
-            output3b.innerText = "The solution is: " + result;
+            output3b.innerText = "The solution is: " + Math.round((result + Number.EPSILON) * 100) / 100;
         } else if (sign2 == "+" || sign2 == "-") {
             var operandPOS;
             for (let i = 1; i < equationArray.length; i++) {
@@ -222,7 +223,7 @@ function group_3_quest_2() {
                 else if (operand == "%") {
                     result = op1 % op2
                 }
-                output3b.innerText = "The solution is: " + result;
+                output3b.innerText = "The solution is: " + Math.round((result + Number.EPSILON) * 100) / 100;
             } else if (sign2 == "-") {
                 if (operand == "+") {
                     result = - op1 + op2
@@ -242,7 +243,7 @@ function group_3_quest_2() {
                 else {
                     result = "invalid Formula";
                 }
-                output3b.innerText = "The solution is: " + result;
+                output3b.innerText = "The solution is: " + Math.round((result + Number.EPSILON) * 100) / 100;
             } else {
                 output3b.innerText = "Invalid Equation..";
             }
@@ -302,7 +303,7 @@ function group_3_quest_2() {
             else if (operand == "%") {
                 result = - op1 % op2
             }
-            output3b.innerText = "The solution is: " + result;
+            output3b.innerText = "The solution is: " + Math.round((result + Number.EPSILON) * 100) / 100;
         } else {
             output3b.innerText = "Invalid equation"
         }
@@ -341,7 +342,7 @@ function group_3_quest_2() {
         else if (userInput[operandPOS] == "%") {
             result = op1 % op2
         }
-        output3b.innerText = "The solution is: " + result;
+        output3b.innerText = "The solution is: " + Math.round((result + Number.EPSILON) * 100) / 100;
     }
 
 
