@@ -95,7 +95,7 @@ section {
 }
 
 .section-grid {
-    margin-top: 1em;
+    margin-top: 0.85em;
     display: grid;
     gap: 0.5em;
     padding: 0.95em;
