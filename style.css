@@ -57,7 +57,7 @@ h3 {
 
 h2 {
     color: #882602;
-    margin-bottom: 1em;
+    margin-bottom: 0.85em;
     font-size: 2.5em;
 }
 
@@ -80,13 +80,13 @@ p {
 
 .container {
     background-color: #f9f9f9;
-    padding: 1em 6em;
+    padding: 1em 5em;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2em;
+    gap: 1em;
 }
 
 section {
@@ -95,7 +95,7 @@ section {
 }
 
 .section-grid {
-    margin-top: 1.5em;
+    margin-top: 1em;
     display: grid;
     gap: 0.5em;
     padding: 0.95em;
@@ -168,12 +168,19 @@ footer {
 /* mobile view */
 
 @media only screen and (max-width: 600px) {
-    header {
+     header {
+        display: block;
         grid-template-columns: none;
     }
-
+    header .text-container, .image-container{
+        display: block;
+    }
+    .image-container img{
+        margin-top: -2.5em;
+        width: 100% !important;
+    }
     .container {
-        padding: 1em 2em;
+        padding: 1em;
     }
 
     main {
