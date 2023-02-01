@@ -95,7 +95,7 @@ section {
 }
 
 .section-grid {
-    margin-top: 1em;
+    margin-top: 1.5em;
     display: grid;
     gap: 0.5em;
     padding: 0.95em;
@@ -185,5 +185,9 @@ footer {
 
     main {
         grid-template-columns: none;
+        gap: 1em
+    }
+    .section-grid {
+        margin-top: 1em;
     }
 }
