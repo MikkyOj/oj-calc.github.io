@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>BootStrap and JavaScript accessement. Assignment 2</title>
+    <!-- Author: Ibrahim Ahmed, 000880591 -->
+    <!--Date: Jan., 31, 2023-->
+    <!--This is a simple dynamic webpage that involves users input and displays the output after processing using javascripts functions. It consists of brief description about the page, it uses the bootsrap 5 ______ component to display the content of each section to the users -->
+</head>
+
+<body>
+    <header>
+        <div class="text-container">
+            <div>
+                <h1>Mikky Oj
+                </h1>
+                <p>A dynamic web page that prompt users for input, process the input and show users the processed
+                    result.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://cdn.dribbble.com/users/3639405/screenshots/9289670/media/1732732c94ffb2fa0cf5db80de54ad58.jpg" alt="header background image">
+        </div>
+    </header>
+    <div class="container">
+        <h2>Calculator</h2>
+        <main>
+            <section>
+                <h3>Group 1</h3>
+
+                <div class="section-grid">
+                    <h4>Question 1</h4>
+                    <div class="user-interaction-infor">
+                        <p>This Calculator asks you for an input, you will enter a number and it will return if the
+                            number is within the specified range, if it's out of range or not a number</p>
+                    </div>
+
+                    <div class="user-interaction">
+                        <div>
+                            <label for="quest-1a">Enter a number</label>
+                            <input type="text" id="quest-1a">
+                        </div>
+                        <div>
+                            <textarea id="quest-1a-output" readonly></textarea>
+                        </div>
+                        <button onclick="group_1_quest_1()">See result</button>
+                    </div>
+                </div>
+
+                <div class="section-grid">
+                    <h4>Question 2</h4>
+                    <div class="user-interaction-infor">
+                        <p>This Calculator asks you for an input, you will enter a number of days and it will return the
+                            number of years, month and days you can get from that input</p>
+                    </div>
+
+                    <div class="user-interaction">
+                        <div>
+                            <label for="quest-1b">Enter a number of days</label>
+                            <input type="text" id="quest-1b">
+                        </div>
+                        <div>
+                            <textarea id="quest-1b-output" readonly></textarea>
+                        </div>
+                        <button onclick="group_1_quest_2()">See result</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Group 2</h3>
+
+                <div class="section-grid">
+                    <h4>Question 1</h4>
+                    <div class="user-interaction-infor">
+                        <p>This is an alphabeth checker: English alphabeths only. It shows if the input you entered is a vowel or not. You are expected to enter a single alphabeth. </p>
+                    </div>
+
+                    <div class="user-interaction">
+                        <div>
+                            <label for="quest-2a">Enter an alphabeth</label>
+                            <input type="text" id="quest-2a">
+                        </div>
+                        <div>
+                            <textarea id="quest-2a-output" readonly></textarea>
+                        </div>
+                        <button onclick="group_2_quest_1()">See result</button>
+                    </div>
+                </div>
+
+                <div class="section-grid">
+                    <h4>Question 2</h4>
+                    <div class="user-interaction-infor">
+                        <p>This is a Calculator to find the factorial of numbers. You will enter a positive number of
+                            your choice and the result will be displayed</p>
+                    </div>
+
+                    <div class="user-interaction">
+                        <div>
+                            <label for="quest-2b">Enter a number</label>
+                            <input type="text" id="quest-2b">
+                        </div>
+                        <div>
+                            <textarea id="quest-2b-output" readonly></textarea>
+                        </div>
+                        <button onclick="group_2_quest_3()">See result</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Group 3</h3>
+
+                <div class="section-grid">
+                    <h4>Question 1</h4>
+                    <div class="user-interaction-infor">
+                        <p>This is a Calculator to converts large binary number into its decimal value. This calculator
+                            only works if input is between 10 - 30 bits long else output is 0</p>
+                    </div>
+
+                    <div class="user-interaction">
+                        <div>
+                            <label for="quest-3">Enter a number</label>
+                            <input type="text" id="quest-3">
+                        </div>
+                        <div>
+                            <textarea id="quest-3-output" readonly></textarea>
+                        </div>
+                        <button onclick="group_3_quest_1()">See result</button>
+                    </div>
+                </div>
+
+                <div class="section-grid">
+                    <h4>Question 2</h4>
+                    <div class="user-interaction-infor">
+                        <p>This is a Calculator to collects your equation and solves it for you. You can enter basic arithmetics and get a quick result. It takes operations like "+", "-", "/", "*" and "%" </p>
+                    </div>
+
+                    <div class="user-interaction">
+                        <div>
+                            <label for="quest-3b">Enter an equation</label>
+                            <input type="text" id="quest-3b">
+                        </div>
+                        <div>
+                            <textarea id="quest-3b-output" readonly></textarea>
+                        </div>
+                        <button onclick="group_3_quest_2()">See result</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer> &copy;: Michael Ojebola, 2023</footer> <!--footer section-->
+
+</body>
+
+</html>
